@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<title>20191379-김태훈</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Kim<br>Tae Hoon</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user fa-fw w3-margin-right"></i></i>ABOUT ME</a> 
+  <a href="#whatimake" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-file fa-fw w3-margin-right"></i>WHAT I MAKE</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  <div class="w3-panel w3-large">
+    <a href="https://www.facebook.com/profile.php?id=100007074102489"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/kim_taehoon___/?hl=ko"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Kim Tae Hoon</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="Myimg/2-1.jpg" style="width:100%; height:400px;" onclick="onClick(this)" alt="고3">
+      <img src="Myimg/2-2.jpg" style="width:100%; height:400px;" onclick="onClick(this)" alt="고3">
+    </div>
+
+    <div class="w3-third">
+      <img src="Myimg/2-3.jpg" style="width:100%; height:400px;"onclick="onClick(this)" alt="고3">
+      <img src="Myimg/2-4.jpg" style="width:100%; height:400px;"onclick="onClick(this)" alt="고2">
+    </div>
+    
+    <div class="w3-third">
+      <img src="Myimg/2-5.jpg" style="width:100%; height:400px;"onclick="onClick(this)" alt="고2">
+      <img src="Myimg/2-6.jpg" style="width:100%; height:400px;"onclick="onClick(this)" alt="고3 졸업사진">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-black">1</a>
+      <a href="index2.html" class="w3-bar-item w3-black w3-button">2</a>
+      <a href="index2.html" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="Myimg/1-6.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Kim Tae Hoon</h4>
+      <p>사용 가능 언어:C++,Delphi 7</p>
+      <p>BOJ티어: 골드2</p>
+      <p>학교: 청운대학교</p>
+      <p>자격증: 컴활 1급,운전 1종 보통</p>
+      <p>
+        안녕하십니까 청운대학교에 재학 중인 24살 김태훈입니다. 주로 사용하는 언어는 C++,Delphi 7이입니다. 
+        일반적인 어플리케이션은 Delphi 7을 이용해 만듭니다. 알고리즘과 관련된 공부는 C++언어를 이용해
+        BOJ를 통해 공부를 하는 중이며 현재 풀스택 개발자가 되기 위하여 웹클라이언트 프로그래밍과 데이터 베이스
+        서버 구축 수업을 들으며 공부 중입니다.
+      </p>
+      <p>E-Mail: pre_f_86@naver.com</p>
+      <p>전화 번호: 010-3090-2305</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">BOJ(Backjoon Online Judjement)</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:70%">Tier: Gold 2</div>
+      </div>
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:50%">50%</div>
+      </div>
+      <p class="w3-wide">Application programming</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+      <hr class="w3-opacity">
+
+    </div>
+  </div>
+
+  <!-- what i make section-->
+  <div class="w3-black w3-center w3-padding-24" id="whatimake">
+    <h4><b>What I Make</b></h4>
+    <div class="w3-third w3-black">
+      <a href="FUtil.html"><img src="FUtil/FUtil-main.PNG" style="width:100%; height:400px;"  alt="FUtil.html"></a>
+    </div>
+
+    <div class="w3-third w3-black">
+      <a href="Finder.html"><img src="Finder/Finder-main.PNG" style="width:100%; height:400px;"  alt="Finder.html"></a>
+    </div>
+    
+    <div class="w3-third w3-black">
+      <a href="FSkin.html"><img src="FSkins/FSkins-main.PNG" style="width:100%; height:400px;" alt="FSkins.html"></a>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>pre_f_86@naver.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Incheon, KR</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>010-3090-2305</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>INFO</h3>
+        <p>청운대학교 2학년
+           20191379-김태훈
+        </p>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul">
+          <a href="FUtil.html">
+            <li class="w3-padding-16 w3-hover-black">
+            <img src="FUtil/FUtil-main.PNG" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">FUtil</span><br>
+            <span>컴퓨터 사용할 때 불편한 점을 개선</span>
+          </li>
+          </a>
+          <a href="Finder.html">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="Finder/Finder-main.PNG" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Finder</span><br>
+            <span>텍스트 파일 내에 단어를 찾아주는 프로그램.</span>
+          </li> 
+          </a>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">FUtil</span> 
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">FSkins</span> 
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Finder</span> 
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">청운대학교</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">학생회 체육부장</span>5
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>

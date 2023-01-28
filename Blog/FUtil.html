@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FUtil-김태훈</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('FUtil/FUtil-code.PNG');
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#introduce" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Introduce</a>
+    <a href="#image" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Program Image</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>FUtil</b></h1>
+    <p>컴퓨터를 사용함에 불편함을 개선하고자 만들었던 프로그램.</p>
+    <img src="FUtil/FUtil-code.PNG" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="FUtil/FUtil-code.PNG" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <a href="FUtil/Setups.zip">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> Download File
+    </button>
+  </a>
+  </header>
+
+  <!-- Introduce Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="introduce">
+    <h2>Introduce</h2>
+    <hr class="w3-opacity">
+    <p> Delphi 7 언어로 여러 해동안 이어가며 만들어온 프로그램, 초기 프로그램에는 웹브라우저 기능밖에 없었지만 
+      점차 기능을 추가해 나아가며 현재의 프로그램까지 왔다. FUtil의 설치가 용이하도록 설치 프로그램을 따로 만들어냈다.
+    </p>
+  </div>
+
+  <!-- image Section -->
+  <div class="w3-padding-32 w3-content" id="image">
+    <h2 class="w3-text-grey">Program Image</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="FUtil/FSetups.PNG" style="width:100%">
+        <img src="FUtil/FUtil-main.PNG" style="width:100%">
+        <img src="FUtil/FUtil-download.PNG" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="FUtil/FUtil-run.PNG" style="width:100%">
+        <img src="FUtil/FUtil-Web.PNG" style="width:100%">
+        <img src="FUtil/FUtil-schedule.PNG" style="width:100%">
+        <img src="FUtil/FUtil-settings.PNG" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <div class="w3-panel w3-large">
+      <a href="https://www.facebook.com/profile.php?id=100007074102489"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/kim_taehoon___/?hl=ko"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    </div>
+    <p class="w3-medium">PreF</p>
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
